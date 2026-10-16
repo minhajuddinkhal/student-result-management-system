@@ -16,8 +16,7 @@ $is_submitted = ($assignment['marks_status'] === 'submitted');
             </h6>
             <small class="text-muted">
                 Section: <?= $assignment['section'] ?> | Session: <?= $assignment['academic_year'] ?> | 
-                Weight Split: Midterm <?= $assignment['mid_weight'] ?>% + Final Term <?= $assignment['final_weight'] ?>%
-            </small>
+                </small>
         </div>
         <div>
             <?php if ($is_approved): ?>
@@ -52,12 +51,9 @@ $is_submitted = ($assignment['marks_status'] === 'submitted');
                                 <th>
                                     <span class="d-block small fw-bold"><?= htmlspecialchars($comp['component_name']) ?></span>
                                     <span class="badge bg-<?= $comp['term_type'] === 'mid' ? 'primary' : 'success' ?> bg-opacity-75" style="font-size: 0.7rem;">
-                                        Max: <?= $comp['max_marks'] ?> (<?= $comp['weightage'] ?>%)
-                                    </span>
+                                        </span>
                                 </th>
                             <?php endforeach; ?>
-                            <th rowspan="2" style="width: 90px;">Mid (<?= $assignment['mid_weight'] ?>%)</th>
-                            <th rowspan="2" style="width: 90px;">Fin (<?= $assignment['final_weight'] ?>%)</th>
                             <th rowspan="2" style="width: 100px;">Total (100)</th>
                             <th rowspan="2" style="width: 80px;">Grade</th>
                             <th rowspan="2" style="width: 70px;">GP</th>

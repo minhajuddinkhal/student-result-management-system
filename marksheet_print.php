@@ -62,7 +62,10 @@
 
     <!-- Official Header -->
     <div class="header-title">
-        <h2>STATE UNIVERSITY OF SCIENCE & TECHNOLOGY</h2>
+        <div class="mb-2">
+            <img src="<?= BASE_URL ?>/Static/img/logo.png" alt="<?= UNIVERSITY_NAME ?>" style="max-height: 70px; max-width: 280px; object-fit: contain;">
+        </div>
+        <h2>ANWER KHAN MODERN UNIVERSITY</h2>
         <h4>OFFICIAL TRANSCRIPT OF ACADEMIC RECORD</h4>
         <small class="text-muted">Office of the Controller of Examinations</small>
     </div>
